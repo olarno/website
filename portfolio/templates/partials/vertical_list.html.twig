@@ -1,0 +1,42 @@
+<div class="card mb-3 mt-2">
+
+  <h3 class="card-header">Dernières mise à jour</h3>
+    
+
+    <div class="card-body">
+        <h6 class="card-subtitle text-muted">Technologies</h6>
+    </div>
+    <ul class="list-group">
+        {% for technologie in technologies %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <a href="#"> {{ technologie.name }}</a>
+            <span class="badge badge-primary badge-pill">{{ technologie.nb_project }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="card-body">
+        <h6 class="card-subtitle text-muted">Projets</h6>
+    </div>
+    <ul class="list-group">
+    {% for project in projects %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="#"> {{ project.name }}</a>
+        </li>
+    {% endfor %}    
+    </ul>
+
+
+    <div class="card-body">
+        <h6 class="card-subtitle text-muted">Expériences</h6>
+    </div>
+    <ul class="list-group">
+    {% for experience in experiences %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="#">{{ experience.job }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+
+</div>

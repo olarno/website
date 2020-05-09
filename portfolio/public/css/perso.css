@@ -1,0 +1,9 @@
+.row {
+    margin-right: 0em;
+    margin-left: 0em;
+}
+
+.form__admin {
+    max-width: 330px;
+    margin: 100px auto 0;
+}
