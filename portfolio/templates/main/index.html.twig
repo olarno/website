@@ -3,78 +3,13 @@
 {% block title %}A&O ~ Développeur Web{% endblock %}
 
 {% block div %}
-
-<div class="mt-2">
-
-<div class="row">
-    <div class="col-12">
-        <div class="card border-secondary mb-3">
-        <div class="card-header">A propos</div>
-            <div class="card-body">
-                <h4 class="card-title">Lorem ipsum dolor sit amet.</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam non placeat quod quam ipsum at incidunt temporibus repellat, excepturi, laudantium, natus nam sint. Assumenda sequi provident aperiam harum facilis praesentium.</p>
-            </div>
-            <div class="card-body">
-                <h4 class="card-title">Dernière expérience</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam non placeat quod quam ipsum at incidunt temporibus repellat, excepturi, laudantium, natus nam sint. Assumenda sequi provident aperiam harum facilis praesentium.</p>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="container">
 
 
-<div class="row">
-    <div class="col-6">
-        <div class="card border-secondary mb-3 ">
-            <div class="card-header">Technologies</div>
-            <div class="card-body">
-                <div class="list-group">
-                {% for technologie in technologies %}
-                    <a href="#" class="list-group-item list-group-item-action">{{ technologie.name }}</a>
-                {% endfor %}
-                 
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="card border-secondary mb-3">
-        <div class="card-header">Projets</div>
-            <div class="card-body">
-                <h4 class="card-title">Liste des projets personels & professionels </h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere, provident consequuntur rerum minus rem cumque delectus blanditiis magnam nulla numquam. Autem dolor asperiores, nostrum est quibusdam beatae nesciunt laudantium assumenda, enim dolorum esse ullam, iste adipisci aperiam! Distinctio, quisquam dolore. Laudantium expedita assumenda voluptates necessitatibus sapiente cupiditate aspernatur porro modi, dignissimos molestiae debitis?</p>
-             <div class="row">
-              <div class="card-body text-center">
-                <a href="#" class="card-link">Personnels</a>
-              </div>
-              <div class="card-body text-center">
-                <a href="#" class="card-link">Professionnels</a>
-              </div>
-             </div>
+{% include 'partials/about.html.twig' %}
+{% include 'partials/techno_xp.html.twig' %}
 
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="row">
-    <div class="col-4">
-        <div class="card border-secondary mb-3">
-            <div class="card-header">Liens utiles</div>
-            <div class="card-body">
-            gitHub / linkedin / Cv (pdf) /
-            </div>
-        </div>
-    </div>
-    <div class="col-8">
-        <div class="card border-secondary mb-3">
-            <div class="card-header">Contact</div>
-            <div class="card-body">
-            form de contact
-            </div>
-        </div>
-    </div>
-</div>
 
 </div>
 {% endblock %}
