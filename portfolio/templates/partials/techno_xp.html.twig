@@ -5,9 +5,9 @@
             <div class="card-body">
                 <h5 class="card-title"><a href="#">Technologies</a></h5>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">PHP</li>
-                <li class="list-group-item">Symfony</li>
-                <li class="list-group-item">Lavarel</li>
+            {% for technologie in technologies %}
+                <li class="list-group-item">{{ technologie.name }} </li>
+            {% endfor %}
                 <li class="list-group-item"><a href="#">Voir plus...</a></li>
 
             </ul>
@@ -18,9 +18,9 @@
                 <h5 class="card-title"><a href="#">Experiences</a></h5>
             </div>
             <div class="card-body">
-                <p class="card-text">Année - Année : Poste occupé - Entreprise</p>
-                <p class="card-text">Année - Année : Poste occupé - Entreprise</p>
-                <p class="card-text">Année - Année : Poste occupé - Entreprise</p>
+            {% for experience in experiences %}         
+                <p class="card-text">{{experience.dateBegin|date('Y')}} - {{experience.dateEnd|date('Y')}} : {{experience.job}} - {{ experience.CompanyName }}</p>
+            {% endfor %}
                 <p class="card-text"><a href="#">Voir plus...</a></p>
             </div>
         </div>
